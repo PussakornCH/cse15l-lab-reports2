@@ -77,3 +77,15 @@ class StringServer {
 ---
 
 ## Part 2 "SSH key"
+
+![Image](3-5 com.JPG)
+
+---
+
+![Image](3-5 remote.JPG)
+
+---
+
+![Image](3-6 log.JPG)
+
+---
