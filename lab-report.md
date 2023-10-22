@@ -1,4 +1,7 @@
 # Lab Report 2 - Servers and SSH Keys
+
+[live_page_for_GitHub](https://pussakornch.github.io/cse15l-lab-reports2/lab-report.html)
+
 ## Part 1 "String Servers"
 
 **StringServer.java**
