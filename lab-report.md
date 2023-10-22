@@ -60,6 +60,8 @@ class StringServer {
 }
 ```
 **Screenshot from the two messages**
-![Image](3-1.jpg)
-![Image](3-2.jpg)
+
+![Image](3-1.JPG)
+
+![Image](3-2.JPG)
 
