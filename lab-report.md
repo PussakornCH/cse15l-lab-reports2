@@ -78,14 +78,24 @@ class StringServer {
 
 ## Part 2 "SSH key"
 
-![Image](3-5 com.JPG)
+![Image](3-5com.JPG)
+
+ls command just shows where the private and public key is in this computer
 
 ---
 
-![Image](3-5 remote.JPG)
+![Image](3-5remote.JPG)
+
+ls command cannot find the public key because the key is not in the remote computer
 
 ---
 
-![Image](3-6 log.JPG)
+![Image](3-6log.JPG)
+
+This shows log-in without a password. I believe this happens because the key is automatically input in, so I don't need to.
 
 ---
+
+## Part 3 "What I have learned"
+
+I have learned many things about Java language (code and method), server remote and private, and ssh key. I also learned about bug and how to debug them.
