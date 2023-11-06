@@ -68,7 +68,7 @@ class StringServer {
 * The method handleRequest is called
 * The argument is URI url. The values are ArrayList<String> s, int num, URI url, String[] parameters, and String print.
 * The values that change are the parameters that get string input from the user, String print that will contain new string make up of the user input without '+' character, ArrayList<String> s that will add the string in print into the array of string (in this case: "Hello"), and the num increase by 1.
----
+
 
 ![Image](3-2.JPG)
 
@@ -76,7 +76,7 @@ class StringServer {
 * The argument is URI url. The values are ArrayList<String> s, int num, URI url, String[] parameters, and String print.
 * The values that change are the parameters that get string input from the user ("How are you"), String print that will contain a new string made up of the user input without '+' character, ArrayList<String> s that will add the string in print into the array of string (in this case: "How are you"), and the num increase by 1 (num = 2).
 * 
----
+
 
 ## Part 2 "SSH key"
 
@@ -84,19 +84,19 @@ class StringServer {
 
 ls command just shows where the private and public key is in this computer
 
----
+
 
 ![Image](Private-Key.png)
 
 ls command shows where the public key in the .ssh folder is the remote computer. (I find it by using command ls -a to see all hidden files)
 
----
+
 
 ![Image](3-6log.JPG)
 
 This shows log-in without a password. I believe this happens because the key is automatically input in, so I don't need to.
 
----
+Learning from lab/terminal interaction: I don't need to input my passwords anymore because the .ssh already saves my password for me. I also learned to find where things are in my computer/remote computer.
 
 ## Part 3 "What I have learned"
 
