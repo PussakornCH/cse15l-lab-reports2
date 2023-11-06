@@ -86,9 +86,9 @@ ls command just shows where the private and public key is in this computer
 
 ---
 
-![Image](3-5remote.JPG)
+![Image](Private-Key.png)
 
-ls command cannot find the public key because the key is not in the remote computer
+ls command shows where the public key in the .ssh folder is the remote computer. (I find it by using command ls -a to see all hidden files)
 
 ---
 
