@@ -40,7 +40,12 @@ class Handler3 implements URLHandler {
                     
                     s.add(print); // Assume that parameters[1] is string
                     num += 1; // for the number in front of the string
-                    return String.format("%d. %s", num, print);
+                    String mess = ""; // mess will contain all string that we write so far from the loop
+                    for (int i = 0; i < s.size(); i++) { // The loop will help put all message in mess so that we cann return mess.
+                        mess = mess + String.format("%d. %s", i+1, s.get(i)) + "\n";
+                    }
+                    
+                    return String.format("%s", mess);
                 }
             }
             return "404 Error";
@@ -66,16 +71,15 @@ class StringServer {
 ![Image](3-1.JPG)
 
 * The method handleRequest is called
-* The argument is URI url. The values are ArrayList<String> s, int num, URI url, String[] parameters, and String print.
+* The argument is URI url. The values are ArrayList<String> s, int num, URI url, String[] parameters, String mess, and String print.
 * The values that change are the parameters that get string input from the user, String print that will contain new string make up of the user input without '+' character, ArrayList<String> s that will add the string in print into the array of string (in this case: "Hello"), and the num increase by 1.
 
 
-![Image](3-2.JPG)
+![Image](Part2-add2.PNG)
 
 * The method handleRequest is called
-* The argument is URI url. The values are ArrayList<String> s, int num, URI url, String[] parameters, and String print.
-* The values that change are the parameters that get string input from the user ("How are you"), String print that will contain a new string made up of the user input without '+' character, ArrayList<String> s that will add the string in print into the array of string (in this case: "How are you"), and the num increase by 1 (num = 2).
-* 
+* The argument is URI url. The values are ArrayList<String> s, int num, URI url, String[] parameters, String mess, and String print.
+* The values that change are the parameters that get string input from the user ("How are you"), String print that will contain a new string made up of the user input without '+' character, ArrayList<String> s that will add the string in print into the array of string (in this case: "How are you"), and the num increase by 1 (num = 2). We add String mess to contain (1. Hello and 2. How are you) from for loop and then return mess in the method.
 
 
 ## Part 2 "SSH key"
